@@ -1,0 +1,38 @@
+/* Start Global Rules */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;1,300;1,400;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    @include prefixer(box-sizing, border-box, ms o);
+}
+body{
+    background-color: $background;
+    font-family: $global-font-family;
+}
+ul, ol {
+    list-style: none;
+}
+a { 
+    text-decoration: none;
+}
+input:focus::placeholder
+{
+    @include prefixer(transition, $main-transition, ms);
+    opacity: 0;
+    
+}
+textarea:focus::placeholder {
+    opacity: 0;
+    @include prefixer(transition, $main-transition, ms);
+}
+input::placeholder {
+    font-size: 15px;
+    color: $placeholder-color;
+}
+section {
+    padding-top: $section-padding-top;
+    padding-bottom: $section-padding-bottom;
+}
+/* End Global Rules */

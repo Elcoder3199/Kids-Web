@@ -1,0 +1,32 @@
+/* Start MAin Button */
+
+.main-btn {
+    color: #444;
+    border: solid 1px #f6f6f6;
+    &:hover {
+        color: #fff;
+    }
+    @extend %main-btn-source;
+    &::before {
+    @extend %main-btn-source-before;
+    background-color: $button-background-secound;
+    }
+    @extend %main-btn-effect;
+}
+.main-btn-secound {
+    color: #fff;
+    border: solid 1px $main-color !important;
+    @extend %main-btn-source;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    &::before {
+        @extend %main-btn-source-before;
+        background-color: $button-background !important;
+    }
+    @extend %main-btn-effect;
+    &:hover {
+        color: $main-color;
+    }
+}
+/* End MAin Button */

@@ -1,0 +1,21 @@
+/* Main Links  */
+.link {
+    width: fit-content;
+    position: relative;
+    &::before {
+     content: "";
+     position: absolute;
+     left: 0;
+     bottom: -2px;
+     cursor: pointer;
+     height: 1px;
+     width: 100%;
+     background-color: $text-color;
+    transition: $main-transition;
+  }
+  &:hover {
+    &::before {
+      width: 0;
+    }
+  }
+     }

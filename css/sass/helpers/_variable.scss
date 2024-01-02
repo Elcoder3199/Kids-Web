@@ -1,0 +1,31 @@
+
+$global-font-family: 'Cairo', sans-serif;
+$background: #ffffff;
+$main-color : #53b0ae;
+$heading-color: #434343;
+$text-color: #434343;
+$text-color-light: #939393;
+$border-color: #e3e3e3;
+$button-background: #53b0ae;
+$button-background-secound: #ffffff;
+$header-background: #53b0ae;
+$footer-background: #efefef;
+$footer-text-color: #434343;
+$footer-border-color: #d5d5d5;
+$navigation-text-color: #434343;
+$navigation-box-shadow: rgba(67, 67, 67, 0.25);
+$product-sale-price-color: #f2552c;
+$placeholder-color : #3d3c3c;
+$main-transition : 0.4s;
+$overlay-background : rgba(0, 0, 0, 0.4);
+// Sections Padding
+$section-padding-top : 70px;          
+$section-padding-bottom : 70px;          
+
+// Media Width 
+$maxMobile : "(max-width : 767px)";
+$maxSmall :  "(max-width : 991px)";
+$minSmall :  "(min-width : 768px)";
+$minMedium : "(min-width : 992px)";
+$minLarge : "(min-width : 1200px)";
+$Xsmall : "(max-width : 520px)";

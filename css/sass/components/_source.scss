@@ -1,0 +1,87 @@
+%display-g-2 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 2));
+    gap: 10px;
+}
+
+%content-source {
+    line-height: 2.5;
+    width: 70%;
+    margin: 40px auto;
+    margin-left: 130px;
+    color: $text-color;
+}
+
+%icon-source {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    color: $main-color;
+    font : {
+      size: 1.57rem;
+      weight: 500;
+    }
+}
+
+%icon-source {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    color: $main-color;
+    font : {
+      size: 1.57rem;
+      weight: 500;
+    }
+    transform: translateY(-50%);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.23);
+  }
+
+  %main-btn-source {
+    padding: 17px 26px;
+    position: relative;
+    transition: $main-transition;
+    z-index: 999;
+    margin-top : 30px;
+    cursor: pointer;
+    display: block;
+    width: fit-content;
+    text-transform: capitalize;
+    @media #{$Xsmall} {
+    padding: 13px 22px;
+    }
+}
+
+
+%main-btn-source-before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: $main-transition;
+}
+
+%main-btn-effect {
+
+    &:hover {
+        &::before {
+            width: 0;
+            left: 0;
+        }
+    }
+}

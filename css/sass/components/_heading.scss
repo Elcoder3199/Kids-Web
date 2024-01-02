@@ -1,0 +1,11 @@
+/* Main Heading */
+.main-heading {
+    font-size: 30px;
+    color: $heading-color;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 50px 0;
+    @media #{$Xsmall} {
+        font-size: 25px;
+        }
+}

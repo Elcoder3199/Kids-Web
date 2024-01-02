@@ -1,0 +1,29 @@
+/* grid System */
+.container {
+    margin: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+    @media #{$minSmall} {
+        width: 750px;
+    }
+    @media #{$minMedium} {
+        width: 970px;
+    }
+    @media #{$minLarge} {
+        width: 1170px;
+    }
+}
+
+.text-center-xs {
+    @media #{$maxMobile} {
+        text-align: center;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+html {
+    overflow-x: hidden;
+}
