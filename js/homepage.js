@@ -133,12 +133,3 @@ function dragend() {
 }
 
 // End slider function 
-
-ScrollReveal({
-    reset: false,
-    distance: '80px',
-    duration: 2000,
-    delay: 200
-});
-ScrollReveal().reveal('.shopify .img-left ', { origin: 'left'});
-ScrollReveal().reveal('.shopify .img-right ', { origin: 'right'});
